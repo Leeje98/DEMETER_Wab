@@ -4,4 +4,16 @@ a { text-decoration: none;}
 img { display: block;}
 
 
+.header {
+    width: 1300px;
+    margin: 0 auto;
+}
 
+.header .header_first_line .logo_box {
+    display: flex;
+    justify-content: center;
+}
+
+.header .header_first_line .gnb {
+    float: right;
+}
