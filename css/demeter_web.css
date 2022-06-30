@@ -1,19 +1,85 @@
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a { text-decoration: none;}
+a { text-decoration: none; color: #333;}
 img { display: block;}
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 
 .header {
     width: 1300px;
     margin: 0 auto;
 }
 
+.header .header_first_line {
+    position: relative;
+    margin-top: 20px;
+}
+
 .header .header_first_line .logo_box {
-    display: flex;
-    justify-content: center;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header .header_first_line .logo_box img {
+    width: 250px;
 }
 
 .header .header_first_line .gnb {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
 }
+
+.header .header_first_line .gnb li {
+    margin: 0 8px;
+    line-height: 64px;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+}
+
+#search {
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 50px;
+}
+
+.header .header_first_line .gnb .search_box button {
+    background-color: white;
+    border: none;
+    color: none;
+}
+
+.header .header_first_line .gnb .search_box button i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* header_first_line */
+
+
+
+
+/* lnb */
+
+
+.header .lnb .lnbMenu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 40px 0;
+
+    /* border: 1px solid #333; */
+}
+
+.header .lnb .lnbMenu li {
+    flex: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    /* line-height: 40px; */
+}
+
