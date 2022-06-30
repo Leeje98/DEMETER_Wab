@@ -37,12 +37,23 @@ img { display: block;}
     line-height: 64px;
     font-family: 'Alata', sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #search {
     border: none;
     border-bottom: 1px solid #333;
     width: 50px;
+    transition: 0.5s;
+}
+
+#search:focus {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 3px 5px;
+    margin-right: 3px;
+    outline: none;
 }
 
 .header .header_first_line .gnb .search_box button {
@@ -85,14 +96,36 @@ img { display: block;}
 
 .header .lnb .Menu_list {
     display: flex;
-    background-color: #ddd;
-    padding: 15px 0;
+    background-color: rgba(51, 51, 51, 0.7);
+    height: 0;
+    transition: 0.4s;
+    overflow: hidden;
 
     /* border: 1px solid #333; */
+}
+
+.header .lnb .Menu_list a {
+    color: white;
 }
 
 .header .lnb .Menu_list li {
     flex: 1;
     text-align: center;
     line-height: 30px;
+}
+
+.header .lnb .Menu_list li ul {
+    margin-top: 15px;
+}
+
+.header .lnb .Menu_list li ul li:hover a {
+    color: #333;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-decoration: underline;
+}
+.header .lnb .Menu_list li ul .sg:hover a {
+    padding: 5px 10px;
 }
