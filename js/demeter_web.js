@@ -30,3 +30,74 @@ $(function () {
 
 
 }) // lnb
+
+
+
+const mainVisualSwiper = new Swiper(".main_visual .swiper", {
+    loop: true,           // 마지막장 연결 
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      snapOnRelease: true,
+      draggable: true,
+    },
+    autoplay: {
+        delay: 1000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});  // main_visual
+        
+
+
+
+const HeartBtns = document.querySelectorAll('.xi-heart-o')
+
+HeartBtns.forEach((HeartBtn) => {
+    HeartBtn.addEventListener('click', function() {
+        HeartBtn.classList.toggle('xi-heart')
+        HeartBtn.classList.toggle('xi-heart-o')
+    })
+})  // heart
+
+
+
+
+
+
+const newItemSwiper = new Swiper('.new_item .swiper', {
+    loop: true,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 5000,
+    },
+});  // new item list
+
+
+
+
+
+

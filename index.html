@@ -8,9 +8,12 @@
     
     <script src="./js/jquery-3.6.0.min.js" defer></script>
     <script src="./js/jquery-1.12.4.min.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./js/demeter_web.js" defer></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/demeter_web.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    
 
      <!-- gsap -->
      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>    -->
@@ -23,6 +26,7 @@
 </head>
 <body>
     <header class="header">
+
         <div class="header_first_line">
             <div class="logo_box">
                 <div class="logo_box_inner">
@@ -100,10 +104,158 @@
             </ul>
         </div>
 
-
     </header>
 
     <main class="main">
+
+        <section class="main_visual">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/main_visual/main_visual_01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/main_visual/main_visual_02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/main_visual/main_visual_03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/main_visual/main_visual_04.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/main_visual/main_visual_05.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
+
+        <section class="main_section">
+
+            <section class="visual_categories">
+                <h3>Categories</h3>
+                <h4>데메테르의 다양한 제품을 둘러보세요!</h4>
+                <ul class="categories">
+                    <li><a href="#!"><div class="categories_img"><img src="./img/EDITION/flower_04_Sweet pee_30ml_set.jpg" alt=""></div>EDITION</a></li>
+                    <li><a href="#!"><div class="categories_img"><img src="./img/PERFUME/ARTISAN AROMA_16ml.jpg" alt=""></div>PERFUME</a></li>
+                    <li><a href="#!"><div class="categories_img"><img src="./img/BATH & BODY/Bath&Body_02.jpg" alt=""></div>BATH&BODY</a></li>
+                    <li><a href="#!"><div class="categories_img"><img src="./img/GIFT/gift_08.gif" alt=""></div>SET&GIFT</a></li>
+                    <li class="last"><a href="#!"><div class="categories_img"><img src="./img/EVENT/event_03.jpg" alt=""></div>EVENT</a></li>
+                </ul>
+            </section>
+
+            <section class="banner">
+                <div class="banner_img"><a href="#!"><img src="./img/slaide/grid_id_1612406912542_6_dbe65f.jpg" alt=""></a></div>
+            </section>
+
+            <section class="new_item item_list">
+                <h3>NEW ITEM</h3>
+        
+                <div class="swiper">
+                    <div class="swiper-wrapper new_item_list">
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                                    <div class="badge">NEW</div>
+                                    <div class="text_inner">
+                                        <div class="cost">61,000원</div>
+                                        <div class="price">26,900원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/PERFUME/perfume_16ml 15_choice_1.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">오드퍼퓸 16ml 15종 택2</div>
+                                    <div class="badge">NEW</div>
+                                    <div class="text_inner">
+                                        <div class="cost">38,000원</div>
+                                        <div class="price">26,600원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>1,330P</div>
+                
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/PERFUME/Wet Garden_30ml.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] Wet Garden(웻가든) 30ml</div>
+                                    <div class="badge">NEW</div>
+                                    <div class="text_inner">
+                                        <div class="cost">29,000원</div>
+                                        <div class="price">19,800원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+                
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/PERFUME/limited edition_30_30ml_perfume.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] 30개 한정 30ml 향수 19종</div>
+                                    <div class="badge">NEW</div>
+                                    <div class="badge">BEST</div>
+                                    <div class="badge">한정품</div>
+                                    <div class="text_inner">
+                                        <div class="cost">29,000원</div>
+                                        <div class="price">19,800원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+                
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/PERFUME/Cherry blossom+Peach_2set.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">데메테르 벚꽃&달달 피치 세트</div>
+                                    <div class="badge">NEW</div>
+                                    <div class="text_inner">
+                                        <div class="cost">41,000원</div>
+                                        <div class="price">19,000원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>950P</div>
+                
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/PERFUME/10ml X 3set.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">데메테르 재미있는 향기 향수10ml X 3종 세트 자바칩프라페_웻가든_데이지</div>
+                                    <div class="badge">BEST</div>
+                                    <div class="text_inner">
+                                        <div class="cost">29,000원</div>
+                                        <div class="price">14,500원</div>
+                                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+                
+                                        <div class="heart_btn"><i class="heart xi-heart-o"></i></div>
+                                    </div><!-- text_inner -->
+                                </div>
+                        </a></div>
+                    </div><!-- swiper-wrapper new_item_list -->
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"><i class="xi-angle-left"></i></div>
+                    <div class="swiper-button-next"><i class="xi-angle-right"></i></div>
+
+                </div>
+                
+                
+            </section>
+
+        </section><!--main_section-->
 
     </main>
 
