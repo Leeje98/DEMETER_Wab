@@ -118,5 +118,71 @@ const bestItemSwiper = new Swiper('.best_item .swiper', {
 
 
 
+const flowerSwiper = new Swiper('.flower .swiper', {
+    loop: true,
+    loopedSlides: null,
+    loopFillGroupWithBlank: false,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {                // 인디케이터 클릭이동
+        el: '.flower .swiper-pagination',
+        clickable: true
+    },
+});  // edition flower
+
+
+const signatureSwiper = new Swiper('.signature .swiper', {
+    loop: true,
+    loopedSlides: null,
+    loopFillGroupWithBlank: false,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 5400,
+    },
+    pagination: {                // 인디케이터 클릭이동
+        el: '.signature .swiper-pagination',
+        clickable: true,
+    },
+});  // edition signature
+
+
+
+
+
+
+
+
+
+
+/* 동영상 백그라운드 제이쿼리 */
+$(function(){
+
+    jQuery("#DEMETER_Video").YTPlayer({
+        // videoURL:'8Dwlku4LEkA',                   // 동영상주소
+        videoURL:'https://youtu.be/8Dwlku4LEkA',                   // 동영상주소
+        containment:'.movieBg',                   // 선택자
+        autoPlay:true,                            // 자동재생 (음소거가 true인 경우에만 가능함)
+        mute:true,                                // 음소거여부
+        startAt:0,                                // 동영상이 시작되어야 하는 초
+        opacity:1,                                // 불투명도
+        showControls: false,                      // 영상 컨트롤(재생바 등) 표시여부
+        playOnlyIfVisible: true                   // 해당 화면 밖에 있을때, 일시 중지 
+    });
+
+})
+
+
+
+
 
 
