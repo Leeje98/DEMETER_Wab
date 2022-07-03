@@ -269,11 +269,11 @@ h3 {
 
 /* ----------------new_item------------------ */
 
-.new_item h3 {
+.item_list h3 {
     margin-bottom: 30px;
 }
 
-.new_item h3::before {
+.item_list h3::before {
     content: "";
     display: inline-block;
     width: 5px;
@@ -283,35 +283,49 @@ h3 {
     margin-right: 10px;
 }
 
-.new_item .swiper .swiper-wrapper {}
-
-.new_item .swiper .swiper-wrapper .swiper-slide {
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    box-sizing: border-box;
-    height: 510px;
+.item_list .swiper .swiper-wrapper {
+    margin-bottom: 100px;
+    overflow-y: visible;
 }
 
-.new_item .swiper .swiper-wrapper .swiper-slide a {}
+.item_list .swiper .swiper-wrapper .swiper-slide {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    box-sizing: border-box;
+    height: 470px;
+    transition: 0.3s;
+}
 
-.new_item .swiper .swiper-wrapper .swiper-slide a .product_img {
+.item_list .swiper .swiper-wrapper .swiper-slide:hover {
+    transform: scale(1.05);
+}
+.item_list .swiper .swiper-wrapper .swiper-slide:hover .text .title {
+    text-decoration: underline;
+}
+
+.item_list .swiper .swiper-wrapper .swiper-slide a {}
+
+.item_list .swiper .swiper-wrapper .swiper-slide a .product_img {
     width: 100%;
-    height: 310px;
+    height: 244px;
     overflow: hidden;
 }
 
-.new_item .swiper .swiper-wrapper .swiper-slide a .product_img img {
+.item_list .swiper .swiper-wrapper .swiper-slide a .product_img img {
     width: 100%;
-    height: 310px;
+    /* height: 310px; */
+    height: 244px;
 }
 
 .text {
     padding: 10px;
     position: relative;
+    width: 95%;
+    height: 300px;
 }
 
 .text .title {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 22px;
     font-weight: bold;
 }
 
@@ -321,7 +335,7 @@ h3 {
     border: 1px solid purple;
     display: inline-block;
     padding: 0 2px;
-    margin: 5px 0;
+    margin: 10px 0 5px;
     font-size: 15px;
 }
 
@@ -367,12 +381,15 @@ h3 {
 }
 
 .heart_btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    position: relative;
+    /* bottom: 20px;
+    right: 20px; */
 }
 
 .heart_btn i {
+    position: absolute;
+    right: 45px;
+    top: -40px;
     font-size: 35px;
 }
 
@@ -380,9 +397,18 @@ h3 {
     cursor: pointer;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.new_item .swiper .swiper-button-prev,
+.new_item .swiper .swiper-button-next {
     color: #333;
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 10px;
+}
+
+.best_item .swiper .swiper-button-prev,
+.best_item .swiper .swiper-button-next {
+    color: #333;
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 10px;
 }
 
 

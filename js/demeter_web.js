@@ -78,12 +78,11 @@ HeartBtns.forEach((HeartBtn) => {
 
 
 
-
-
 const newItemSwiper = new Swiper('.new_item .swiper', {
     loop: true,
-    slidesPerView: 4,
-    slidesPerGroup: 4,
+    loopedSlides: null,
+    slidesPerView: 5,
+    slidesPerGroup: 1,
     observer: true,
     observeParents: true,
     spaceBetween: 24,
@@ -92,7 +91,27 @@ const newItemSwiper = new Swiper('.new_item .swiper', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 5000,
+        delay: 2000,
+    },
+});  // new item list
+
+
+
+const bestItemSwiper = new Swiper('.best_item .swiper', {
+    loop: true,
+    loopedSlides: null,
+    loopFillGroupWithBlank: false,
+    slidesPerView: 5,
+    slidesPerGroup: 1,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 2500,
     },
 });  // new item list
 
