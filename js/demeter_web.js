@@ -113,7 +113,8 @@ const bestItemSwiper = new Swiper('.best_item .swiper', {
     autoplay: {
         delay: 2500,
     },
-});  // new item list
+    minimumVelocity: 10
+});  // best item list
 
 
 
@@ -162,15 +163,13 @@ const signatureSwiper = new Swiper('.signature .swiper', {
 
 
 
-
-
 /* 동영상 백그라운드 제이쿼리 */
 $(function(){
 
     jQuery("#DEMETER_Video").YTPlayer({
-        // videoURL:'8Dwlku4LEkA',                   // 동영상주소
-        videoURL:'https://youtu.be/8Dwlku4LEkA',                   // 동영상주소
-        containment:'.movieBg',                   // 선택자
+        videoURL:'8Dwlku4LEkA',                   // 동영상주소
+        // videoURL:'https://youtu.be/8Dwlku4LEkA',                   // 동영상주소
+        containment:'.movieBg_play',                   // 선택자
         autoPlay:true,                            // 자동재생 (음소거가 true인 경우에만 가능함)
         mute:true,                                // 음소거여부
         startAt:0,                                // 동영상이 시작되어야 하는 초
@@ -185,4 +184,20 @@ $(function(){
 
 
 
-
+const aromaSwiper = new Swiper('.aroma_category .swiper', {
+    loop: true,
+    loopedSlides: null,
+    loopFillGroupWithBlank: false,
+    slidesPerView: 6,
+    slidesPerGroup: 1,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 5400,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});  // edition signature

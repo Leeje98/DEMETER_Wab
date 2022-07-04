@@ -8,10 +8,11 @@
     
     <script src="./js/jquery-3.6.0.min.js" defer></script>
     <script src="./js/jquery-1.12.4.min.js" defer></script>
-    <script src="./js/jquery.mb.YTPlayer.src.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./js/demeter_web.js" defer></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/demeter_web.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     
@@ -451,6 +452,8 @@
                 
             </section>
 
+            <section class="bg_img_banner"></section>
+
             <section class="edition">
 
                 <div class="edition_box flower">
@@ -653,14 +656,64 @@
 
             </section>
 
-            <section class="bg_img_banner"></section>
+            <section class="aroma_category">
+                <h3>향기별 모아보기</h3>
+        
+                <div class="swiper">
+                    <div class="swiper-wrapper aroma_category_list">
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_01.jpg" alt=""></div>
+                                <div class="text">로즈머스크 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_02.jpg" alt=""></div>
+                                <div class="text">스윗베이비 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_03.jpg" alt=""></div>
+                                <div class="text">아이슬란딕오로라<br>향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_04.jpg" alt=""></div>
+                                <div class="text">코튼블루 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_05.jpg" alt=""></div>
+                                <div class="text">클린솝 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_06.jpg" alt=""></div>
+                                <div class="text">파우더리머스크 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_07.jpg" alt=""></div>
+                                <div class="text">퍼지네이블 향기모음</div>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#!">
+                                <div class="product_img"><img src="./img/compilation/aroma_08.jpg" alt=""></div>
+                                <div class="text">화이트머스크 향기모음</div>
+                        </a></div>
+                        
+                    </div><!-- swiper-wrapper new_item_list -->
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div><!-- swiper -->
+                
+            </section>
 
             <section class="movieBg">
                 <div class="text_box">
-                    데메테르
-                  </div>
-                <div id="DEMETER_Video" class="player" data-property="{}"></div>
-              </section>
+                    Put your<br>memories<br>in<br>DEMETER
+                </div>
+                <div class="movieBg_play">
+                    <div id="DEMETER_Video" class="player" data-property="{}"></div>
+                </div>
+                <!-- <div class="YTPOverlay"></div> -->
+            </section>
 
         </section><!--main_section-->
 
