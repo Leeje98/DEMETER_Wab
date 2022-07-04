@@ -169,7 +169,6 @@ h3 {
 }
 
 .main_visual .swiper .scrollbar {
-    /* width: 1000px; */
 }
 
 
@@ -181,7 +180,7 @@ h3 {
     width: 1300px;
     margin: 0 auto;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 
@@ -429,6 +428,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .edition .edition_box {
@@ -519,7 +519,107 @@ h3 {
 
 
 
+/* ---------------- bg_img_banner ------------------ */
+
 .bg_img_banner {
-    padding: 300px;
-    background: url(../img/bg_img_banner_01.jpg) no-repeat fixed center center/contain;
+    /* width: 1300px; */
+    /* height: 300px; */
+    padding: 200px 0;
+    /* background: url(../img/bg_img_banner_01.jpg) no-repeat fixed center center/contain; */
+    background: url(../img/shop_about_02_1.jpg) no-repeat fixed center center;
+    /* height: auto; */
+    /* background-size: cover; */
 }
+
+
+/* ---------------- bg_img_banner ------------------ */
+
+
+
+
+/* ---------------- aroma_category ------------------ */
+
+.aroma_category {
+    margin-bottom: 100px;
+}
+
+.aroma_category h3 {
+    margin-bottom: 30px;
+}
+
+.aroma_category h3::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: #333;
+    margin-right: 10px;
+}
+
+.aroma_category .swiper .swiper-wrapper .swiper-slide a .product_img {
+    width: 200px;
+    height: 200px;
+}
+
+.aroma_category .swiper .swiper-wrapper .swiper-slide a .product_img img {
+    width: 100%;
+}
+
+.aroma_category .swiper .swiper-wrapper .swiper-slide a .text {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.aroma_category .swiper .swiper-button-prev,
+.aroma_category .swiper .swiper-button-next {
+    color: #333;
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 10px;
+}
+
+
+
+/* ---------------- aroma_category ------------------ */
+
+
+
+
+/* ---------------- movieBg ------------------ */
+
+.movieBg {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieBg .text_box {
+    border-top: 5px solid #333;
+    padding: 30px;
+    font-family: 'Alata', sans-serif; 
+    font-size: 40px;
+}
+
+.movieBg .movieBg_play {
+    width: 860px;
+    height: 484px;
+}
+
+
+/* ---------------- movieBg ------------------ */
+
+
+
+/* ---------------- aroma_category ------------------ */
+
+
+
+
+
+
+
+
+
+/* ---------------- aroma_category ------------------ */
