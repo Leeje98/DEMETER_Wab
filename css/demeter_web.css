@@ -590,13 +590,15 @@ h3 {
 
 .movieBg {
     width: 100%;
-    height: 500px;
+    height: 484px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .movieBg .text_box {
-    border-top: 5px solid #333;
+    border-left: 5px solid #333;
+    box-sizing: border-box;
     padding: 30px;
     font-family: 'Alata', sans-serif; 
     font-size: 40px;
@@ -612,7 +614,106 @@ h3 {
 
 
 
-/* ---------------- aroma_category ------------------ */
+
+/* ---------------- demeter_Community ------------------ */
+
+.demeter_Community {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.demeter_Community .community {
+    flex: 4;
+    margin-right: 20px;
+}
+
+.demeter_Community .sns_banner {
+    flex: 2;
+}
+
+
+/* ---------------- community ------------------ */
+
+#tab01, #tab02, #tab03 {display: none;}
+
+.sheet01, .sheet02, .sheet03 {display: none;}
+
+#tab01:checked ~ .sheet .sheet01 {display: block;}
+#tab02:checked ~ .sheet .sheet02 {display: block;}
+#tab03:checked ~ .sheet .sheet03 {display: block;}
+
+.sheet>div ul li {
+    list-style: square;
+}
+
+.demeter_Community .community {
+    width: 780px;
+    height: 420px;
+
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.demeter_Community .community .label {
+    display: flex;
+}
+
+.demeter_Community .community .label label {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #333;
+    /* margin-left: -7px; */
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.demeter_Community .community .label label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.demeter_Community .community .sheet {
+    
+    background: #ddd;
+    padding: 40px;
+}
+
+.demeter_Community .community .sheet>div ul li {
+    border-bottom: 1px dotted #333;
+}
+
+.demeter_Community .community .sheet>div ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.demeter_Community .community .sheet>div ul li a .title {
+    width: 650px;
+}
+
+
+/* ---------------- community ------------------ */
+
+
+
+/* ---------------- sns_banner ------------------ */
+
+.demeter_Community .sns_banner {
+    width: 420px;
+    height: 420px;
+}
+
+.demeter_Community .sns_banner .swiper .swiper-wrapper .swiper-slide a img {
+    width: 100%;
+}
+
+
+/* ---------------- demeter_Community ------------------ */
 
 
 
@@ -621,5 +722,4 @@ h3 {
 
 
 
-
-/* ---------------- aroma_category ------------------ */
+/* ---------------- sns_banner ------------------ */
