@@ -201,3 +201,26 @@ const aromaSwiper = new Swiper('.aroma_category .swiper', {
         prevEl: '.swiper-button-prev',
     },
 });  // edition signature
+
+
+
+
+
+const snsSwiper = new Swiper('.sns_banner .swiper', {
+    loop: true,
+    loopedSlides: null,
+    loopFillGroupWithBlank: false,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 7000,
+    },
+    pagination: {                // 인디케이터 클릭이동
+        el: '.sns_banner .swiper-pagination',
+        clickable: true,
+    },
+});  // edition signature
+

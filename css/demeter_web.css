@@ -522,13 +522,10 @@ h3 {
 /* ---------------- bg_img_banner ------------------ */
 
 .bg_img_banner {
-    /* width: 1300px; */
-    /* height: 300px; */
     padding: 200px 0;
     /* background: url(../img/bg_img_banner_01.jpg) no-repeat fixed center center/contain; */
     background: url(../img/shop_about_02_1.jpg) no-repeat fixed center center;
-    /* height: auto; */
-    /* background-size: cover; */
+    /* background: url(../img/shop_about_03.jpg) no-repeat fixed center center; */
 }
 
 
@@ -577,6 +574,7 @@ h3 {
     color: #333;
     background-color: rgba(240, 240, 240, 0.5);
     padding: 10px;
+    top: 40%;
 }
 
 
@@ -590,13 +588,15 @@ h3 {
 
 .movieBg {
     width: 100%;
-    height: 500px;
+    height: 484px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .movieBg .text_box {
     border-left: 5px solid #333;
+    box-sizing: border-box;
     padding: 30px;
     font-family: 'Alata', sans-serif; 
     font-size: 40px;
@@ -612,7 +612,287 @@ h3 {
 
 
 
-/* ---------------- aroma_category ------------------ */
+
+/* ---------------- demeter_Community ------------------ */
+
+.demeter_Community {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.demeter_Community .community {
+    flex: 4;
+    margin-right: 20px;
+}
+
+.demeter_Community .sns_banner {
+    flex: 2;
+}
+
+
+/* ---------------- community ------------------ */
+
+#tab01, #tab02, #tab03 {display: none;}
+
+.sheet01, .sheet02, .sheet03 {display: none;}
+
+#tab01:checked ~ .sheet .sheet01 {display: block;}
+#tab02:checked ~ .sheet .sheet02 {display: block;}
+#tab03:checked ~ .sheet .sheet03 {display: block;}
+
+#tab01:checked ~ .label .lab01 {background-color: #333; color: #ddd;}
+#tab02:checked ~ .label .lab02 {background-color: #333; color: #ddd;}
+#tab03:checked ~ .label .lab03 {background-color: #333; color: #ddd;}
+
+.sheet>div ul li {
+    list-style: square;
+}
+
+.demeter_Community .community .label {
+    display: flex;
+}
+
+.demeter_Community .community .label label {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #333;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    /* border: 1px solid #333; */
+}
+
+.demeter_Community .community .label label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.demeter_Community .community .sheet {
+    /* background: #ddd; */
+    border: 5px solid #ddd;
+    box-sizing: border-box;
+    width: 850px;
+    height: 377px;
+}
+
+.demeter_Community .community .sheet .plus {
+    float: right;
+    margin-right: 60px;
+}
+.demeter_Community .community .sheet .plus:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.demeter_Community .community .sheet>div ul {
+    padding: 40px 0 10px;
+}
+
+.demeter_Community .community .sheet>div ul li {
+    border-bottom: 1px dotted #333;
+    margin: 0 60px;
+}
+.demeter_Community .community .sheet>div ul li:hover {
+    font-weight: bold;
+}
+
+.demeter_Community .community .sheet>div ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.demeter_Community .community .sheet>div ul li a .title {
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 33px;
+}
+
+.demeter_Community .community .sheet>div ul li a .date {
+    line-height: 30px;
+}
+
+
+/* ---------------- community ------------------ */
+
+
+
+/* ---------------- sns_banner ------------------ */
+
+.demeter_Community .sns_banner {
+    width: 420px;
+    height: 420px;
+}
+
+.demeter_Community .sns_banner .swiper .swiper-wrapper .swiper-slide a img {
+    width: 100%;
+}
+
+
+/* ---------------- sns_banner ------------------ */
+
+
+/* ---------------- demeter_Community ------------------ */
+
+
+
+
+/* ---------------- bottom_banner ------------------ */
+
+.bottom_banner .img_box {
+    width: 900px;
+    margin: 0 auto;
+
+    /* border: 1px solid #333; */
+}
+
+.bottom_banner .img_box img {
+    width: 100%;
+}
+
+
+/* ---------------- bottom_banner ------------------ */
+
+
+
+
+
+/* ---------------- footer ------------------ */
+
+
+
+/* ---------------- footer_label ------------------ */
+
+.footer_label {
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+}
+
+.footer_label .sns_icom_box {
+    width: 195px;
+    height: 50px;
+    margin: 0 auto;
+
+    /* border: 1px solid #333;
+    box-sizing: border-box; */
+}
+
+.footer_label .sns_icom_box a i {
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0 10px;
+    color: #333;
+    opacity: 0.7;
+}
+.footer_label .sns_icom_box a i:hover {
+    opacity: 1;
+}
+
+
+/* ---------------- footer_label ------------------ */
+
+
+/* ---------------- footer_inner ------------------ */
+
+
+.footer_inner {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.footer_inner h4 {
+    font-family: 'Alata', sans-serif; 
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.footer_inner .footerdiv {
+    padding: 0 30px;
+    border-right: 1px solid #ddd;
+    padding: 30px 50px 30px 0;
+}
+.footer_inner .Customer_Service {
+    padding-left: 0;
+}
+.footer_inner .service {
+    border-right: none;
+    padding-right: none;
+}
+
+.footer_inner .Customer_Service .call {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer_inner .inquiry .Messenger i {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: #747474;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.footer_inner .inquiry .Messenger:hover {
+    cursor: pointer;
+}
+
+.footer_inner .inquiry .Messenger:hover i {
+    font-size: 33px;
+    color: #333;
+}
+
+.footer_inner .footer_menu ul li {
+    line-height: 25px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.footer_inner .footer_menu ul li:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+
+/* ---------------- footer_inner ------------------ */
+
+
+/* ---------------- footer_last ------------------ */
+
+.footer_last_outer {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 30px 0;
+}
+
+.footer_last {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+
+.footer_last div ul {
+    display: flex;
+}
+
+.footer_last div ul li {
+    padding-left: 15px;
+    cursor: pointer;
+}
 
 
 
@@ -620,6 +900,4 @@ h3 {
 
 
 
-
-
-/* ---------------- aroma_category ------------------ */
+/* ---------------- footer_last ------------------ */
