@@ -227,6 +227,28 @@ const snsSwiper = new Swiper('.sns_banner .swiper', {
 
 
 
+/* top_btn */
+const topBtn = document.querySelector('.Quick_top_box')
+
+topBtn.addEventListener('click', () => {
+  gsap.to(window, 0.8, {
+    scrollTo: 0
+  })
+})
+
+
+/* down_btn */
+const downBtn = document.querySelector('.Quick_bottom_box')
+
+downBtn.addEventListener('click', () => {
+    gsap.to(window, 0.8, {
+    //   scrollTo: (0, 5700)
+      scrollTo: 5700
+    })
+})
+
+
+
 
 // 아직 임시로 넣은것 - 스타벅스 참고하여 집에서 수정할 것.
 /* product&event ScrollMagic - 상품 썸네일 스크롤시 나타나게 하기 */

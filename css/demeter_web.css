@@ -132,7 +132,7 @@ h3 {
     background-color: white;
     border-radius: 3px;
     padding: 5px 20px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .header .lnb .Menu_list li ul .sg:hover a {
     padding: 5px 10px;
@@ -142,10 +142,57 @@ h3 {
 
 /* lnb */
 
+/* main */
+
+
 
 
 
 /* main */
+
+
+nav {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#Quick_search_open_btn {display: none;}
+
+.nav_inner .Quick_search_box .search_sheet {
+    display: none;
+}
+
+.nav_inner .Quick_button_box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 12px;
+    cursor: pointer;
+}
+.nav_inner .Quick_bottom_box {
+    border-bottom: 1px solid #ccc;
+}
+
+.nav_inner .Quick_button_box i {
+    font-size: 20px;
+    opacity: 0.7;
+}
+.nav_inner .Quick_button_box:hover i {
+    opacity: 1;
+}
+
+
+
+
+
+/* main */
+
+
+
+
+
 
 /* main_visual */
 
@@ -813,7 +860,7 @@ h3 {
 
 .footer_inner h4 {
     font-family: 'Alata', sans-serif; 
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #333;
@@ -822,7 +869,8 @@ h3 {
 .footer_inner .footerdiv {
     padding: 0 30px;
     border-right: 1px solid #ddd;
-    padding: 30px 50px 30px 0;
+    /* padding: 30px 50px 30px 0; */
+    padding-right: 50px;
 }
 .footer_inner .Customer_Service {
     padding-left: 0;
@@ -833,17 +881,22 @@ h3 {
 }
 
 .footer_inner .Customer_Service .call {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
+.footer_inner .Customer_Service .call i {
+    padding-right: 10px;
+    color: #747474;
+}
+
 .footer_inner .inquiry .Messenger i {
     display: block;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     color: #747474;
-    margin: 20px 0;
+    margin: 25px 0 20px;
     transition: 0.3s;
 }
 
@@ -852,13 +905,13 @@ h3 {
 }
 
 .footer_inner .inquiry .Messenger:hover i {
-    font-size: 33px;
+    font-size: 53px;
     color: #333;
 }
 
 .footer_inner .footer_menu ul li {
     line-height: 25px;
-    opacity: 0.7;
+    opacity: 0.8;
     cursor: pointer;
 }
 .footer_inner .footer_menu ul li:hover {
@@ -883,6 +936,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     opacity: 0.7;
+}
+
+.footer_last div p {
+    font-size: 14px;
 }
 
 .footer_last div ul {
