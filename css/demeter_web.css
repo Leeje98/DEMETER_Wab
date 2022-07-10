@@ -313,8 +313,11 @@ nav {
     height: 100%;
 }
 
-.main_visual .swiper .scrollbar {
-}
+/* .main_visual .swiper .swiper-scrollbar {
+    width: 800px;
+    margin-left: 300px;
+} */
+
 
 
 

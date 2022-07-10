@@ -35,7 +35,7 @@ $(function () {
 
 const mainVisualSwiper = new Swiper(".main_visual .swiper", {
     loop: true,           // 마지막장 연결 
-    // loopedSlides: 2,
+    // loopedSlides: 1,
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -54,7 +54,7 @@ const mainVisualSwiper = new Swiper(".main_visual .swiper", {
       el: '.swiper-scrollbar',
       snapOnRelease: true,
       draggable: true,
-      dragSize: 300,
+      dragSize: 150,
     },
     autoplay: {
         delay: 1000,
