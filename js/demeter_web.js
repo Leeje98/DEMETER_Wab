@@ -57,7 +57,7 @@ const mainVisualSwiper = new Swiper(".main_visual .swiper", {
       dragSize: 150,
     },
     autoplay: {
-        delay: 1000,
+        delay: 5000,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -99,24 +99,24 @@ const newItemSwiper = new Swiper('.new_item .swiper', {
 
 
 
-const bestItemSwiper = new Swiper('.best_item .swiper', {
-    loop: true,
-    loopedSlides: null,
-    loopFillGroupWithBlank: false,
-    slidesPerView: 5,
-    slidesPerGroup: 1,
-    observer: true,
-    observeParents: true,
-    spaceBetween: 24,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 2500,
-    },
-    minimumVelocity: 10
-});  // best item list
+// const bestItemSwiper = new Swiper('.best_item .swiper', {
+//     loop: true,
+//     loopedSlides: null,
+//     loopFillGroupWithBlank: false,
+//     slidesPerView: 5,
+//     slidesPerGroup: 1,
+//     observer: true,
+//     observeParents: true,
+//     spaceBetween: 24,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     autoplay: {
+//         delay: 2500,
+//     },
+//     minimumVelocity: 10
+// });  // best item list
 
 
 
@@ -252,20 +252,20 @@ downBtn.addEventListener('click', () => {
 
 
 
-// 아직 임시로 넣은것 - 스타벅스 참고하여 집에서 수정할 것.
-/* product&event ScrollMagic - 상품 썸네일 스크롤시 나타나게 하기 */
-const scrollEls = document.querySelectorAll('.scroll_el')
+// // 아직 임시로 넣은것 - 스타벅스 참고하여 집에서 수정할 것.
+// /* product&event ScrollMagic - 상품 썸네일 스크롤시 나타나게 하기 */
+// const scrollEls = document.querySelectorAll('.scroll_el')
 
-scrollEls.forEach((scrollEl) => {
-    new ScrollMagic
-        .Scene({       // 감지할 위치 
-            triggerElement:scrollEl,   // 감지할 대상
-            triggerHook: 0.7 // 화면 높이를 0에서 1로 봤을때 0.7쯤 오면 이벤트를 일으키기 위해 Hook이라는 고리를 걸어놓고 감지하게 한다 (0.7이나 0.8이 제일 많이 쓰인다)
-        })
-        .setClassToggle(scrollEl, 'show')     
-        // setClassToggle : 트리거의 애니메이션 시작지점부터 종료지점까지 어떠한 대상에 클래스를 넣었다 뺏다(토글)하는 메서드
-        .addTo(new ScrollMagic.Controller())
-        // addTo : 생성한다
-        // Controller : 컨트롤 할수 있다 / 실행한다
-})
+// scrollEls.forEach((scrollEl) => {
+//     new ScrollMagic
+//         .Scene({       // 감지할 위치 
+//             triggerElement:scrollEl,   // 감지할 대상
+//             triggerHook: 0.7 // 화면 높이를 0에서 1로 봤을때 0.7쯤 오면 이벤트를 일으키기 위해 Hook이라는 고리를 걸어놓고 감지하게 한다 (0.7이나 0.8이 제일 많이 쓰인다)
+//         })
+//         .setClassToggle(scrollEl, 'show')     
+//         // setClassToggle : 트리거의 애니메이션 시작지점부터 종료지점까지 어떠한 대상에 클래스를 넣었다 뺏다(토글)하는 메서드
+//         .addTo(new ScrollMagic.Controller())
+//         // addTo : 생성한다
+//         // Controller : 컨트롤 할수 있다 / 실행한다
+// })
 
