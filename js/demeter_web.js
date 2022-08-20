@@ -1,6 +1,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const searchBox = document.querySelector('#search')
 
 searchBox.addEventListener('focus', () => {
@@ -252,20 +266,60 @@ downBtn.addEventListener('click', () => {
 
 
 
-// // 아직 임시로 넣은것 - 스타벅스 참고하여 집에서 수정할 것.
-// /* product&event ScrollMagic - 상품 썸네일 스크롤시 나타나게 하기 */
-// const scrollEls = document.querySelectorAll('.scroll_el')
+const ID = 'green'
+const PW = '1234'
 
-// scrollEls.forEach((scrollEl) => {
-//     new ScrollMagic
-//         .Scene({       // 감지할 위치 
-//             triggerElement:scrollEl,   // 감지할 대상
-//             triggerHook: 0.7 // 화면 높이를 0에서 1로 봤을때 0.7쯤 오면 이벤트를 일으키기 위해 Hook이라는 고리를 걸어놓고 감지하게 한다 (0.7이나 0.8이 제일 많이 쓰인다)
-//         })
-//         .setClassToggle(scrollEl, 'show')     
-//         // setClassToggle : 트리거의 애니메이션 시작지점부터 종료지점까지 어떠한 대상에 클래스를 넣었다 뺏다(토글)하는 메서드
-//         .addTo(new ScrollMagic.Controller())
-//         // addTo : 생성한다
-//         // Controller : 컨트롤 할수 있다 / 실행한다
-// })
+let userId = document.querySelector('#id_text')
+let userPw = document.querySelector('#password_text')
+
+let Id_Box = document.getElementById('#ID_box')
+let Pw_Box = document.getElementById('#PW_box')
+
+window.onload = function () {
+    userId.focus()
+}
+
+function IDfo() {
+    document.getElementById("ID_box").style.borderColor = '#cf82df';
+    document.getElementById("ID_box").style.borderWidth = '2px';
+}
+function IDfo_n() {
+    document.getElementById("ID_box").style.borderColor = '#ccc';
+    document.getElementById("ID_box").style.borderWidth = '1px';
+}
+
+function PWfo() {
+    document.getElementById("PW_box").style.borderColor = '#cf82df';
+    document.getElementById("PW_box").style.borderWidth = '2px';
+}
+function PWfo_n() {
+    document.getElementById("PW_box").style.borderColor = '#ccc';
+    document.getElementById("PW_box").style.borderWidth = '1px';
+}
+
+
+document.getElementById('login_Btn').onclick = function() {
+    if(userId.value == ID && userPw.value == PW ) {
+        alert('로그인 되었습니다');
+        window.open("/index.html", "_self",);
+    } else if(userId.value != ID && userPw.value != PW) {
+        alert('존재하지 않는 아이디입니다');
+        userId.value = ''
+        userPw.value = ''
+        userId.focus()
+    } else if(userId.value === ID && userPw.value != PW) {
+        alert('비밀번호를 다시 확인해주세요');
+        userPw.value = ''
+        userPw.focus()
+    } else {
+        alert('아이디와 비밀번호를 다시 확인해주세요');
+        userId.value = ''
+        userPw.value = ''
+        userId.focus()
+    }
+}
+
+
+
+
 

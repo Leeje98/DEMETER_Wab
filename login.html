@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login_page</title>
+    <script src="./js/demeter_web.js" defer></script>
     <script>
 
         
@@ -15,6 +16,32 @@
 
             let userId = document.querySelector('#id_text')
             let userPw = document.querySelector('#password_text')
+
+            let Id_Box = document.getElementById('#ID_box')
+            let Pw_Box = document.getElementById('#PW_box')
+
+            window.onload = function () {
+                userId.focus()
+            }
+
+            function IDfo() {
+                document.getElementById("ID_box").style.borderColor = '#cf82df';
+                document.getElementById("ID_box").style.borderWidth = '2px';
+            }
+            function IDfo_n() {
+                document.getElementById("ID_box").style.borderColor = '#ccc';
+                document.getElementById("ID_box").style.borderWidth = '1px';
+            }
+
+            function PWfo() {
+                document.getElementById("PW_box").style.borderColor = '#cf82df';
+                document.getElementById("PW_box").style.borderWidth = '2px';
+            }
+            function PWfo_n() {
+                document.getElementById("PW_box").style.borderColor = '#ccc';
+                document.getElementById("PW_box").style.borderWidth = '1px';
+            }
+
 
             document.getElementById('login_Btn').onclick = function() {
                 if(userId.value == ID && userPw.value == PW ) {
@@ -75,6 +102,10 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+        .input_box .box:nth-child(2) {
+            /* border-top: none; */
+            margin-top: 8px;
+        }
 
         #id_text, #password_text {
             display: block;
@@ -123,8 +154,8 @@
         <div class="login_box">
             
             <div class="input_box">
-                <div class="box"><input type="text" id="id_text" placeholder="아이디"></div>
-                <div class="box"><input type="text" id="password_text" placeholder="비밀번호"></div>
+                <div class="box" id="ID_box"><input type="text" id="id_text" placeholder="아이디" onfocus="IDfo()" onblur="IDfo_n()"></div>
+                <div class="box" id="PW_box"><input type="text" id="password_text" placeholder="비밀번호" onfocus="PWfo()" onblur="PWfo_n()"></div>
             </div>
 
             <label for="maintenance" class="check_label"><input type="checkbox" id="maintenance"> 로그인 상태 유지</label>
